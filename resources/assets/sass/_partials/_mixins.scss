@@ -1,0 +1,15 @@
+//Some mixins
+
+@mixin transition($speed, $ease) {
+  -webkit-transition: $speed $ease all;
+  -moz-transition: $speed $ease all;
+  -o-transition: $speed $ease all;
+  transition: $speed $ease all;
+}
+
+@mixin box-shadow($deg, $dis, $blur, $spread, $bg) {
+  -webkit-box-shadow: $deg $dis $blur $spread $bg;
+  -moz-box-shadow: $deg $dis $blur $spread $bg;
+  -o-box-shadow: $deg $dis $blur $spread $bg;
+  box-shadow: $deg $dis $blur $spread $bg;
+}

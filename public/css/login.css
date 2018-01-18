@@ -1,0 +1,96 @@
+/*The variable colors code*/
+
+.clearfix:after {
+  display: block;
+  clear: both;
+}
+
+.nav-2 {
+  width: 90%;
+  margin: 3%;
+  /* padding: 18px; */
+  -webkit-box-shadow: 0px 1px 3px rgba(20, 30, 10, 0.9);
+          box-shadow: 0px 1px 3px rgba(20, 30, 10, 0.9);
+  height: 100%;
+  background: #1e141e;
+  border-radius: 10px;
+}
+
+.menu {
+  width: 80%;
+  margin: 2em auto;
+  height: 100%;
+}
+
+.menu a {
+  color: #919191;
+  -webkit-transition: all linear 0.15s;
+  transition: all linear 0.15s;
+}
+
+.menu > ul {
+  margin: 0;
+}
+
+.menu > ul > li {
+  display: inline-block;
+  position: relative;
+  font-size: 15px;
+}
+
+.menu > ul > li > a {
+  text-decoration: none;
+  padding: 10px 40px;
+  display: inline-block;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.menu > ul > li:hover > a {
+  background: #2e2728;
+}
+
+.menu li {
+  margin: 0px;
+  list-style: none;
+}
+
+.menu li:hover > a {
+  border-top: 2px solid #be5;
+  text-decoration: none;
+  color: #be5b70;
+}
+
+.menu li:hover .sub-menu {
+  z-index: 1;
+  opacity: 1;
+}
+
+.menu .arrow {
+  font-size: 11px;
+  line-height: 0%;
+}
+
+.menu .sub-menu {
+  padding: 5px 0px;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: opacity linear 0.15s;
+  transition: opacity linear 0.15s;
+  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  background: #2e2728;
+}
+
+.menu .sub-menu li {
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 10px 30px;
+}
+
+.menu .sub-menu li a {
+  padding: 10px 30px;
+}
+

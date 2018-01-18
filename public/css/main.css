@@ -1,0 +1,481 @@
+/*The variable colors code*/
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active {
+  color: #FFFFFF;
+}
+
+a:focus {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #FFFFFF;
+}
+
+header {
+  width: 100%;
+  top: 0;
+  position: absolute;
+  z-index: 9;
+  background: rgba(20, 20, 40, 0.7);
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+}
+
+header.scrolled {
+  position: fixed;
+  background: #0a140a;
+}
+
+header .container {
+  height: 100%;
+  padding: 0;
+  font-family: 'Passion One', cursive;
+  margin: auto;
+}
+
+header .container .logo {
+  height: auto;
+  float: left;
+  margin-left: 15px;
+}
+
+header .container .logo a {
+  color: #FFFFFF;
+}
+
+header .container .logo h3 {
+  padding-bottom: 0;
+  font-weight: bold;
+  font-size: 1.4em;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  z-index: 9;
+}
+
+.hamburger .btn {
+  padding: .5em .9em;
+  background: #279AF1;
+}
+
+.hamburger .btn-menu {
+  color: #F7F7F7;
+  font-size: .9em;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.nav {
+  margin: 0;
+  width: auto;
+  margin-left: 1em;
+  float: right;
+  padding: 6px;
+  height: auto;
+}
+
+.nav ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  padding: 18.4px;
+  margin: 0;
+  font-size: 1em;
+  float: left;
+}
+
+.nav li a {
+  padding: 10px;
+  color: #999;
+  text-decoration: none;
+  font-stretch: expanded;
+}
+
+.nav li a:hover {
+  color: #F7F7F7;
+  border-top: 2px solid #FFFFFF;
+  top: 0;
+  padding-top: 13.4px;
+  -webkit-transition: ease 0.5s all;
+  transition: ease 0.5s all;
+}
+
+.nav li a:after {
+  border-bottom: 3px solid #F7F7F7;
+  background: #279AF1;
+  position: absolute;
+  left: 0;
+}
+
+.nav li .btn {
+  padding: .4em 1em;
+  border: 1px solid rgba(10, 20, 10, 0.3);
+  border-radius: 2px;
+  outline: none;
+  position: relative;
+  margin-top: -7px;
+}
+
+.nav li .btn-post {
+  background: #F7F7F7;
+  color: #c8140a;
+}
+
+.nav li .btn-post:hover {
+  color: #F7F7F7;
+  border: 1px solid #c8140a;
+  background: transparent;
+  padding: .4em 1em;
+}
+
+.clearfix:after {
+  clear: both;
+  display: block;
+}
+
+.main-wrapper {
+  margin: 3em;
+}
+
+._top {
+  margin-top: 8em;
+}
+
+.landing {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("/images/11.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.overlay {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  baxckground: #111;
+  opacity: 0.7;
+  left: 0;
+  right: 0;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.left-circle {
+  padding: 15px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: #FFFFFF;
+  opacity: .4;
+  -webkit-transition: ease 0.5s all;
+  transition: ease 0.5s all;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  z-index: 1;
+}
+
+.right-circle {
+  padding: 30px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: #FFFFFF;
+  opacity: .4;
+  -webkit-transition: ease 0.5s all;
+  transition: ease 0.5s all;
+  position: absolute;
+  right: -30px;
+  bottom: -30px;
+  z-index: 1;
+}
+
+.big-circle {
+  width: 500px;
+  margin: auto;
+  height: 500px;
+  padding-top: 5em;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.inner-section {
+  width: 60%;
+  margin: 15% auto 0;
+  height: auto;
+  right: 0;
+  left: 0;
+  border-radius: 5px;
+  border: 1px solid #111;
+  padding: 1.6em 3em;
+  background: rgba(10, 10, 10, 0.8);
+  position: absolute;
+}
+
+.inner-section article {
+  text-align: center;
+  line-height: 25px;
+  font-family: 'Raleway', sans-serif;
+  color: #FFFFFF;
+}
+
+.inner-section .login-signup {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.inner-section .login-signup .btn {
+  padding: .9em 3em;
+  margin: 3px;
+  display: inline-block;
+  outline: none;
+  font-family: 'Titillium Web', sans-serif;
+  border: none;
+  border-radius: 50px;
+  -webkit-box-shadow: #111111 2px 0px 3px;
+          box-shadow: #111111 2px 0px 3px;
+  position: relative;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+
+.inner-section .login-signup .btn:hover {
+  background: #F7F7F7;
+}
+
+.inner-section .login-signup .btn-login {
+  background: #279AF1;
+  color: #FFFFFF;
+}
+
+.inner-section .login-signup .btn-login:hover {
+  color: #279AF1;
+}
+
+.inner-section .login-signup .btn-up {
+  background: #141e1e;
+  color: #FFFFFF;
+}
+
+.inner-section .login-signup .btn-up:hover {
+  color: #141e1e;
+}
+
+.post-section {
+  background: #F7F7F7;
+  height: auto;
+}
+
+.post-section .inner-post {
+  padding: 1em 1.2em;
+  margin: 5% auto 0;
+}
+
+.post-section .inner-post h2 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: lighter;
+  color: #279AF1;
+}
+
+.post-section .post-form {
+  padding: 20px;
+}
+
+.post-section .post-form .form-control {
+  min-height: 3em;
+  padding: .9em 1.2em;
+  border-radius: 0;
+  border: 1px solid rgba(20, 30, 20, 0.4);
+}
+
+.post-section .post-form .btn {
+  padding: .7em 2.5em;
+  border-radius: 0px;
+  border: none;
+  -webkit-box-shadow: rgba(10, 20, 10, 0.3) 2px 0px 2px;
+          box-shadow: rgba(10, 20, 10, 0.3) 2px 0px 2px;
+}
+
+.post-section .post-form .btn-submit {
+  background: #141432;
+  color: #F7F7F7;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+
+.post-section .post-form .btn-submit:hover {
+  border-radius: 50px;
+  -webkit-transition: 0.5s ease-in-out all;
+  transition: 0.5s ease-in-out all;
+}
+
+.post-section .small-btn .btn {
+  padding: .4em 1.5em;
+  border-radius: 50px;
+  border: none;
+  -webkit-box-shadow: rgba(10, 20, 10, 0.3) 2px 0px 2px;
+          box-shadow: rgba(10, 20, 10, 0.3) 2px 0px 2px;
+}
+
+.post-section .small-btn .btn-details,
+.post-section .small-btn .btn-delete,
+.post-section .small-btn .btn-edit {
+  background: #141432;
+  color: #F7F7F7;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+
+.post-section .small-btn .btn-details:hover,
+.post-section .small-btn .btn-delete:hover,
+.post-section .small-btn .btn-edit:hover {
+  border-radius: 50px;
+  -webkit-transition: 0.5s ease-in-out all;
+  transition: 0.5s ease-in-out all;
+}
+
+.post-section .small-btn .btn-delete,
+.post-section .small-btn .btn-edit {
+  background: #64140a;
+  color: #F7F7F7;
+}
+
+.post-section .small-btn .btn-delete:hover,
+.post-section .small-btn .btn-edit:hover {
+  border-radius: 50px;
+  -webkit-transition: 0.5s ease-in-out all;
+  transition: 0.5s ease-in-out all;
+}
+
+.post-section .small-btn .btn-edit {
+  background: #145a0a;
+  color: #F7F7F7;
+}
+
+.login-section {
+  background: #0a0a28;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.inner-login {
+  margin: 5% auto;
+  width: 50%;
+  height: auto;
+  padding: 4em;
+}
+
+.inner-login .form-section {
+  margin: 5% auto;
+  padding: 2em;
+  height: 40vh;
+  border: 1px solid #fff;
+}
+
+.inner-login .form-section .header {
+  padding: .9em 1.5em;
+  background: #279AF1;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  background: #0a140a;
+}
+
+footer .inner-container {
+  text-align: center;
+  padding: 2em;
+}
+
+footer .inner-container h3 {
+  color: #F7F7F7;
+  font-size: 1em;
+  text-space: 3px;
+  font-weight: 500;
+}
+
+footer .inner-container p {
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-size: .9em;
+  color: #279AF1;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    float: right;
+  }
+
+  .inner-section {
+    width: 99%;
+    margin: 9em auto 0;
+  }
+
+  .post-section .inner-post {
+    margin: 5em auto 0;
+  }
+
+  .left-circle {
+    right: 0;
+    left: 0;
+    top: -20px;
+    margin: auto;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    z-index: 1;
+  }
+
+  .right-circle {
+    left: 0;
+    margin: auto;
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+    z-index: 1;
+  }
+
+  .login-signup {
+    margin: 5px;
+  }
+}
+
