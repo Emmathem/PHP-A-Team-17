@@ -4,6 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * @property mixed $users
+ */
 class Posts extends Model
 {
     //
@@ -13,4 +16,8 @@ class Posts extends Model
     public $primaryKey = "id";
     //Timestamps
     public $timestamps = true;
+
+    public function users() {
+        return $this->belongsTo('App\Users');
+    }
 }

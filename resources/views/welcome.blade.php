@@ -13,8 +13,8 @@
 
          </article>
          <div class = "login-signup">
-            <a href="login" class = "btn btn-login">Login</a>
-            <a href="" class="btn btn-up">Sign Up</a>
+            <a href="{{ route('login') }}" class = "btn btn-login">Login</a>
+            <a href="{{ route('register') }}" class="btn btn-up">Sign Up</a>
          </div>
       </div>
    </section>

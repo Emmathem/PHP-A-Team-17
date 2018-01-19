@@ -20,9 +20,8 @@
             @if(count($posts) > 0)
                 @foreach($posts as $post)
                     <h3><a href="/posts/{{$post->id}}"> {{$post->title}} </a></h3>
-                    <small>Post written on: {{ $post->created_at }}</small>
+                    <small>Post written on: {{ $post->created_at }} by {{ $post->users->name }} </small>
                 @endforeach
-
                 {{--{{  $post->links() }}--}}
                 @else
                     <p>No Post Available</p>

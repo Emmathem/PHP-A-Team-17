@@ -96,22 +96,7 @@ header {
       color: #999;
       text-decoration: none;
       font-stretch: expanded;
-      &:hover {
-        color: $theme-white;
-        border-top: 2px solid $theme-p-white;
-        top: 0;
-        padding-top: 13.4px;
-        -webkit-transition: ease 0.5s all;
-        -moz-transition: ease 0.5s all;
-        -o-transition: ease 0.5s all;
-        transition: ease 0.5s all;
-      }
-      &:after {
-        border-bottom: 3px solid $theme-white;
-        background: $theme-blue;
-        position: absolute;
-        left: 0;
-      }
+
     }
     .btn {
       padding: .4em 1em;
@@ -259,6 +244,7 @@ section {
   background: $theme-white;
   height: auto;
   .inner-post {
+    width: 70%;
     padding: 1em 1.2em;
     margin: 5% auto 0;
     h2 {
