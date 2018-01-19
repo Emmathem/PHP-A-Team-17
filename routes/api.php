@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use App\Student;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,24 @@ use Illuminate\Http\Request;
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+ 
+Route::get('student', function() {
+    return Student::all();
+});
+ 
+Route::get('student/{id}', function($id) {
+    return Student::find($id);
+});
+
+Route::post('student', function(Request $request) {
+    return Student::create($request->all());
+});
+
+Route::put('student/{id}', function(Request $request, $id) {
+    $student = Student::findOrFail($id);
+    $student->update($request->all());
+
+    return $student;
 });

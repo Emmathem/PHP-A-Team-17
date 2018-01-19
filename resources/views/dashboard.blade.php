@@ -8,14 +8,14 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                   {{-- @if (session('status'))
+                    @if (session('status'))
                         <div class="alert alert-success">
                             {{ session('status') }}
                         </div>
-                    @endif--}}
+                    @endif
 
-                        <a href="{{ route ('posts.create') }}" class = "btn btn-post">Create Post</a>
                     <h4>Your Post</h4>
+                    @if(count($posts) > 0 )
                     <table class="table table-stripped">
                         <thead>
                         <tr>
@@ -35,6 +35,13 @@
 
                         @endforeach
                     </table>
+                        @else
+                        <div class = "alert alert-warning">
+                            <strong>You have no post </strong>
+                            <a class = "pull-right btn-btn-default" href = "{{ route ('posts.create') }}">Create a Post</a>
+                        </div>
+                        @endif
+
                 </div>
             </div>
         </div>
